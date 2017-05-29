@@ -1,0 +1,5 @@
+This is a game of Tic-Tac-Toe. There are two options in this project.
+First. Start with the console.
+php -f ~ src/ovsx/classes/console/main.php
+Secondly. Web start. For example :
+http://localhost:8080/OvsX/src/ovsx/classes/web/index.php

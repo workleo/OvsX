@@ -1,0 +1,22 @@
+{
+    "name": "leo/tic_tac_toe",
+    "description": "This is a Tic Tac Toem game.",
+    "license": "LGPL-3.0",
+    "authors": [
+        {
+            "name": "Leonid",
+            "email": "antropoid2017@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php":">=7.1.0",
+        "twig/twig": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "console\\": "src/ovsx/classes/console/",
+                 "web\\":"src/ovsx/classes/web/"
+        }
+    }
+}

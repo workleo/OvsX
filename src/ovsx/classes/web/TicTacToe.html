@@ -1,0 +1,132 @@
+<html>
+<head>
+    <style type="text/css">
+        button {
+            background: #e1e1e1;
+            border: transparent;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            padding: 1px 1px;
+
+        }
+
+        td {
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        img {
+            width: 40px;
+            height: 40px;
+            vertical-align: middle;
+            text-align: center;
+
+        }
+    </style>
+    <title>Tic Tac Toe</title>
+</head>
+
+<body>
+
+
+<form action="index.php" method="POST">
+
+    <textarea rows="10" cols="40" name="text" title=""
+              style="display:inline-flex; margin-top: 25px;color:red; border: hidden; background: transparent;"
+              readonly wrap="hard" dir="ltr">{{mess}}
+    </textarea>
+
+
+    <table style="display: inline-block; vertical-align: top;">
+        <tr>
+            <td></td>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>
+                <button type="submit" name="square[]" value="A1">
+                    <!--suppress HtmlUnknownTarget -->
+                    <img src="{{square.A1}}">
+                </button>
+            </td>
+            <td>
+                <button type="submit" name="square[]" value="B1">
+                    <!--suppress HtmlUnknownTarget -->
+                    <img src="{{square.B1}}">
+                </button>
+            </td>
+            <td>
+                <button type="submit" name="square[]" value="C1">
+                    <!--suppress HtmlUnknownTarget -->
+                    <img src="{{square.C1}}">
+                </button>
+            </td>
+            <td>1
+            <td></td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>
+                <button type="submit" name="square[]" value="A2">
+                    <!--suppress HtmlUnknownTarget -->
+                    <img src="{{square.A2}}">
+                </button>
+            </td>
+            <td>
+                <button type="submit" name="square[]" value="B2">
+                    <!--suppress HtmlUnknownTarget -->
+                    <img src="{{square.B2}}">
+                </button>
+            </td>
+            <td>
+                <button type="submit" name="square[]" value="C2">
+                    <!--suppress HtmlUnknownTarget -->
+                    <img src="{{square.C2}}">
+                </button>
+            </td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>
+                <button type="submit" name="square[]" value="A3">
+                    <!--suppress HtmlUnknownTarget -->
+                    <img src="{{square.A3}}">
+                </button>
+            </td>
+            <td>
+                <button type="submit" name="square[]" value="B3">
+                    <!--suppress HtmlUnknownTarget -->
+                    <img src="{{square.B3}}">
+                </button>
+            </td>
+            <td>
+                <button type="submit" name="square[]" value="C3">
+                    <!--suppress HtmlUnknownTarget -->
+                    <img src="{{square.C3}}">
+                </button>
+            </td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+            <td></td>
+        </tr>
+    </table>
+    <br>
+    <label>
+        <input type="text" name="text_answer" autofocus>
+        <input type="submit" name="restart" value="Restart" id="id_restart">
+    </label>
+</form>
+</body>
+
+</html>
